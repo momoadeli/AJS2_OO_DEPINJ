@@ -4,21 +4,29 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
-import { InsertElementComponent } from "./insertelement/insertelement.component"
-import { Position1FancyElementComponent } from "./fancyelement/position1fancyelement.component"
+import { InsertElementComponent } from "./parent-child/insertelement.component"
+import { MyParentComponent } from "./parent-child/myparent.component"
+import { MyChildComponent1 } from "./parent-child/mychild1.component"
+import { MyChildComponent2 } from "./parent-child/mychild2.component"
+import { MyChildComponent3 } from "./parent-child/mychild3.component"
+import { SimpleService } from './parent-child/simple.service'
+
 
 @NgModule({
   declarations: [
     AppComponent,
     InsertElementComponent,
-    Position1FancyElementComponent
+    MyParentComponent,
+    MyChildComponent1,
+    MyChildComponent2,
+    MyChildComponent3
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule
   ],
-  providers: [],
+  providers: [SimpleService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

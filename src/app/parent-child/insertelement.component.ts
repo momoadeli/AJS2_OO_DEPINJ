@@ -1,3 +1,4 @@
+// This component acts as the input for what needs to be inserted
 import { Component } from '@angular/core';
 
 @Component({
@@ -6,7 +7,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./insertelement.component.css']
 })
 export class InsertElementComponent {
-  title = 'insert element';
+
+  	title = 'insert element';
+
+  	constructor() {
+
+  	}
 }
 
 
