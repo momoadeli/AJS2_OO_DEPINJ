@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { MyParentComponent } from "./myparent.component"
+import { SimpleService } from "./simple.service"
 
 @Component({
   selector: 'my-child3',
@@ -7,7 +8,12 @@ import { MyParentComponent } from "./myparent.component"
   styleUrls: ['./mychildx.component.css']
 })
 export class MyChildComponent3 extends MyParentComponent {
-  title = 'position 3 fancy element';
+  title = 'child 3 class';
+
+  	constructor(protected simpleService: SimpleService) {
+
+  		super(simpleService);
+  	}  
 }
 
 

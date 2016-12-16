@@ -8,7 +8,7 @@ import { SimpleService } from "./simple.service"
   styleUrls: ['./mychildx.component.css']
 })
 export class MyChildComponent1 extends MyParentComponent {
-  	title = 'position 1 fancy element';
+  	title = 'child 1 class';
   	parentService = this.simpleService;
 
   	constructor(protected simpleService: SimpleService) {

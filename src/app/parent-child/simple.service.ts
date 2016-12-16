@@ -4,10 +4,18 @@ import { Injectable } from '@angular/core';
 @Injectable()
 export class SimpleService {
 
-  constructor() { 
+	arrRegistered:string[] = [];
 
-  	console.log('singleton instantated');
+	constructor() { 
 
-  }
+		console.log('service singleton instantiated');
+
+	}
+
+	register(strClassName: string): any[] {
+
+		this.arrRegistered.push(strClassName)
+		return this.arrRegistered;
+	}
 
 }

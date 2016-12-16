@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
-	title = 'Control Component';
+	title = 'Angular 2 Object Oriented Patterns and Pitfalls 1: Dependency Injection';
 
 	constructor() {
 

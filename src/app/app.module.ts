@@ -4,7 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
-import { InsertElementComponent } from "./parent-child/insertelement.component"
+
 import { MyParentComponent } from "./parent-child/myparent.component"
 import { MyChildComponent1 } from "./parent-child/mychild1.component"
 import { MyChildComponent2 } from "./parent-child/mychild2.component"
@@ -15,7 +15,7 @@ import { SimpleService } from './parent-child/simple.service'
 @NgModule({
   declarations: [
     AppComponent,
-    InsertElementComponent,
+
     MyParentComponent,
     MyChildComponent1,
     MyChildComponent2,

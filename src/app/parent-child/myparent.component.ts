@@ -11,17 +11,18 @@ import { SimpleService } from "./simple.service"
 })
 export class MyParentComponent {
 
-	title="Base Class element"
+	title="Parent Class"
+
+	arrRegistered:string[] = [];
 
 	constructor(protected simpleService: SimpleService) {
 
 		console.log(simpleService);
 	}
 
-	somethingBase() {
-
-		alert('clicked on: ' + this.title);
-		return this;
+	doSomething() {
+		this.arrRegistered = this.simpleService.register(this.title);
+		return;
 	}
 
 }

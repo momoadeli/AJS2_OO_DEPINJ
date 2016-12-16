@@ -1,6 +1,9 @@
-<br>
-{{title}}
 
-<div (click)="somethingBase()">
-	click aggregate element insertion point:
+<div (click)="doSomething()">
+	<button>register</button> {{title}}
+</div>
+<div *ngFor="let myObject of arrRegistered">
+
+	{{myObject}}
+	
 </div>
