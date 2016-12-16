@@ -1,4 +1,6 @@
-# Ajs2OoExample
+# AJS2_OO_Dependency Injection
+
+This  project is a simple example of the patterns and pitfalls of Angular 2 Dependency Injection with respect to object orientation and inheritance.
 
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.22-1.
 
